@@ -87,8 +87,8 @@
             expanded = !expanded;
             node.setAttribute('aria-expanded', expanded ? 'true' : 'false');
             node.querySelector('.h__menu-text').textContent = expanded ? 'Закрыть меню' : 'Открыть меню';
-            links.classList.toggle('header__links_opened', expanded);
-            links.classList.add('header__links-toggled');
+            links.classList.toggle('h__links_opened', expanded);
+            links.classList.add('h__links-toggled');
         });
     }
 
