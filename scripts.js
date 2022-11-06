@@ -81,12 +81,12 @@
 
     function makeMenu(node) {
         let expanded = false;
-        const links = document.querySelector('.header__links');
+        const links = document.querySelector('.h__links');
 
         node.addEventListener('click', () => {
             expanded = !expanded;
             node.setAttribute('aria-expanded', expanded ? 'true' : 'false');
-            node.querySelector('.header__menu-text').textContent = expanded ? 'Закрыть меню' : 'Открыть меню';
+            node.querySelector('.h__menu-text').textContent = expanded ? 'Закрыть меню' : 'Открыть меню';
             links.classList.toggle('header__links_opened', expanded);
             links.classList.add('header__links-toggled');
         });
@@ -94,6 +94,6 @@
 
     document.addEventListener('DOMContentLoaded', () => {
         makeTabs(document.querySelector('.main__devices'));
-        makeMenu(document.querySelector('.header__menu'));
+        makeMenu(document.querySelector('.h__menu'));
     });
 })();
